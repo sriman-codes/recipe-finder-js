@@ -2,8 +2,7 @@
 
 A simple and responsive web application to discover healthy, quick, and easy-to-cook recipes using everyday ingredients.
 
-🌐 **Live Demo:** [(https://sriman-codes.github.io/recipe-finder-js/index.html)
-](https://sriman-codes.github.io/recipe-finder-js/index.html)
+🌐 **Live Demo:** https://sriman-codes.github.io/recipe-finder-js/
 ---
 
 ## ✨ Features
@@ -39,6 +38,7 @@ A simple and responsive web application to discover healthy, quick, and easy-to-
 ---
 
 ## 📂 Project Structure
+
 
 
 
