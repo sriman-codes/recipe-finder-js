@@ -2,8 +2,7 @@
 
 A simple and responsive web application to discover healthy, quick, and easy-to-cook recipes using everyday ingredients.
 
-🌐 **Live Demo:** https://your-live-link.netlify.app  
-📂 **GitHub Repo:** https://github.com/your-username/recipe-finder
+🌐 **Live Demo:** [https://your-live-link.netlify.app  ](https://sriman-codes.github.io/recipe-finder-js/index.html)
 
 ---
 
@@ -40,5 +39,6 @@ A simple and responsive web application to discover healthy, quick, and easy-to-
 ---
 
 ## 📂 Project Structure
+
 
 
