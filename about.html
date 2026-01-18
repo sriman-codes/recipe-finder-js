@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <nav>
+      <div class="logo">
+          <img src="./assets/green-leaf-logo-vector-removebg-preview.png" alt="#logo">
+          <h1>Healthy Recipe Finder</h1>
+      </div>
+
+      <!-- menu icon for mobile (added) -->
+      <div class="menu-icon" id="menuIcon" onclick="toggleMenu()" aria-label="Toggle menu" role="button">☰</div>
+
+      <ul id="navList">
+          <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+          <li><a href="about.html" onclick="closeMenu()">About</a></li>
+          <li><a href="recipe.html" onclick="closeMenu()">Recipes</a></li>
+
+          <!-- browse button moved into mobile menu (visible only on small screens) -->
+          <li class="browse-mobile" style="display:none;">
+            <button type="button" onclick="onBrowseClick()">Browse recipes</button>
+          </li>
+      </ul>
+
+      <div class="browse">
+          <button type="button" onclick="onBrowseClick()">Browse recipes</button>
+      </div>
+  </nav>
+    <!-- body -->
+    <div class="body">
+        <div class="container">
+            <div class="outer1">
+                <div class="box1">
+                    <h1>What you'll get</h1>
+                </div>
+                <div class="box2">
+                    <img src="./assets/Screenshot 2025-09-03 191926.png" alt="#">
+                    <h1>Whole-food recipes</h1>
+                    <p>Each dishes uses everyday, unprocessed ingredients.</p>
+                </div>
+                <div class="box3">
+                    <img src="./assets/Screenshot 2025-09-03 192017.png" alt="#">
+                    <h1>Minimum fuss</h1>
+                    <p>All recipes are designed to make eating healthy quick and easy.</p>
+                </div>
+                <div class="box4">
+                    <img src="./assets/Screenshot 2025-09-03 192101.png" alt="#">
+                    <h1>Search in seconds</h1>
+                    <p>Filter by nameor ingredient and jump straight to the recipe you need.</p>
+                </div>
+            </div>
+            <div class="outer2">
+                <div class="b1">
+                    <h1>Built for real life</h1>
+                    <p>Cooking shouldn't be complicated. These recipes comes in under 30 minutes of active time, fit busy shedules, and taste good enough to repeat.</p>
+                    <p>Whethet you're new to the kitchen or just need a fresh ideas, we've got you covered.</p>
+                </div>
+                <img src="https://images.pexels.com/photos/9354586/pexels-photo-9354586.jpeg" alt="#">
+            </div>
+            <div class="outer3">
+                <h1>Ready to cook smarter?</h1>
+                <p>Hit the button, pick a recipe, and get dinner on the table--fast.</p>
+                <a href="recipe.html">
+                    <button type="button" class="browze">Browse recipes</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="recipe.js"></script>
+</body>
+</html>

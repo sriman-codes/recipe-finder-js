@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <nav>
+      <div class="logo">
+          <img src="./assets/green-leaf-logo-vector-removebg-preview.png" alt="#">
+          <h1>Healthy Recipe Finder</h1>
+      </div>
+
+      <!-- menu icon for mobile (added) -->
+      <div class="menu-icon" id="menuIcon" onclick="toggleMenu()" aria-label="Toggle menu" role="button">☰</div>
+
+      <ul id="navList">
+          <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+          <li><a href="about.html" onclick="closeMenu()">About</a></li>
+          <li><a href="recipe.html" onclick="closeMenu()">Recipes</a></li>
+
+          <!-- browse button moved into mobile menu (visible only on small screens) -->
+          <li class="browse-mobile" style="display:none;">
+            <a href="recipe.html">
+                <button type="button">Browse recipes</button>
+            </a>
+          </li>
+      </ul>
+
+      <div class="browse">
+          <button type="button" onclick="onBrowseClick()">Browse recipes</button>
+      </div>
+  </nav>
+
+
+    <!-- body -->
+    <div class="body">
+        <div class="outer">
+            <div class="box1">
+                <h1>Healthy meals,zero fuss</h1>
+                <p>Discover eight quick,whole-food recipes that you can cook tonight --no processed junk,no guesswork </p>
+                <a href="about.html">
+                        <button type="button" class="browze" >Start exploring
+                    </button>
+                    </a>
+            </div>
+            <div class="box2">
+                <div class="img-box">
+
+                    <img src="https://images.pexels.com/photos/6996304/pexels-photo-6996304.jpeg" alt="#">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="recipe.js"></script>
+    
+</body>
+</html>

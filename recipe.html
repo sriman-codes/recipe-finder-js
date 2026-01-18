@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+      <div class="logo">
+          <img src="./assets/green-leaf-logo-vector-removebg-preview.png" alt="#">
+          <h1>Healthy Recipe Finder</h1>
+      </div>
+
+      <!-- menu icon for mobile (added) -->
+      <div class="menu-icon" id="menuIcon" onclick="toggleMenu()" aria-label="Toggle menu" role="button">☰</div>
+
+      <ul id="navList">
+          <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+          <li><a href="about.html" onclick="closeMenu()">About</a></li>
+          <li><a href="recipe.html" onclick="closeMenu()">Recipes</a></li>
+
+          <!-- browse button moved into mobile menu (visible only on small screens) -->
+          <li class="browse-mobile" style="display:none;">
+            <button type="button" onclick="onBrowseClick()">Browse recipes</button>
+          </li>
+      </ul>
+
+      <div class="browse">
+          <button type="button" onclick="onBrowseClick()">Browse recipes</button>
+      </div>
+  </nav>
+
+    <!-- body -->
+    <div class="body">
+        <div class="container">
+            <div class="intro">
+                <h1>Explore our simple,healthy recipes</h1>
+                <p>Discover eight quick,whole-food dishes that fit real-life shedules and taste amazing. Use the search bar to find a recipe by name or ingredient, or simply scroll the list and let something delicious catch your eye.</p>
+            </div>
+            <div class="search">
+                <div class="filter">
+                    <select  id="prep-time">
+                        <option value="Max prep time">Max prep time</option>
+                        <option value="5 mins">5 mins</option>
+                        <option value="10 mins">10 mins</option>
+                        
+                    </select>
+                    
+                    <select  id="cook-time">
+                        <option value="Max cook time">Max cook time</option>
+                        <option value="5 mins">5 mins</option>
+                        <option value="10 mins">10 mins</option>
+                        <option value="12 mins">12 mins</option>
+                        <option value="15 mins">15 mins</option>
+                        
+                    </select>
+                </div>
+                <div class="search-bar">
+                    <button type="button" id="search-btn" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" id="search-input" placeholder="Search recipes by name or ingredient....">
+                </div>
+            </div>
+        <div class="recipes">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" alt="#">
+                <h4>Fruit Pancake</h4>
+                <p>A refreshing, layers of pancakes with lot of fruits</p>
+                <div class="time">
+                    <div class="prep">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Prep: 5 mins</span>
+                    </div>
+                    <div class="cook">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>Cook: 15 mins</span>
+                    </div>
+                    <div class="serve">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Servings: 2</span>
+                    </div>
+                </div>
+                <button type="button" id="btn">View recipe</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" alt="#">
+                <h4>Sambar rice</h4>
+                <p>A refreshing, layers of pancakes with lot of fruits</p>
+                <div class="time">
+                    <div class="prep">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Prep: 10 mins</span>
+                    </div>
+                    <div class="cook">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>Cook: 15 mins</span>
+                    </div>
+                    <div class="serve">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Servings: 2</span>
+                    </div>
+                </div>
+                <button type="button" id="btn">View recipe</button>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" alt="#">
+                <h4>Biriyani</h4>
+                <p>A refreshing, layers of pancakes with lot of fruits</p>
+                <div class="time">
+                    <div class="prep">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Prep: 5 mins</span>
+                    </div>
+                    <div class="cook">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>Cook: 15 mins</span>
+                    </div>
+                    <div class="serve">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Servings: 2</span>
+                    </div>
+                </div>
+                <button type="button" id="btn">View recipe</button>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" alt="#">
+                <h4>Fruit Pancake</h4>
+                <p>A refreshing, layers of pancakes with lot of fruits</p>
+                <div class="time">
+                    <div class="prep">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Prep: 10 mins</span>
+                    </div>
+                    <div class="cook">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>Cook: 15 mins</span>
+                    </div>
+                    <div class="serve">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Servings: 2</span>
+                    </div>
+                </div>
+                <button type="button" id="btn">View recipe</button>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" alt="#">
+                <h4>Fruit Pancake</h4>
+                <p>A refreshing, layers of pancakes with lot of fruits</p>
+                <div class="time">
+                    <div class="prep">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Prep: 10 mins</span>
+                    </div>
+                    <div class="cook">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>Cook: 15 mins</span>
+                    </div>
+                    <div class="serve">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Servings: 2</span>
+                    </div>
+                </div>
+                <button type="button" id="btn">View recipe</button>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" alt="#">
+                <h4>Fruit Pancake</h4>
+                <p>A refreshing, layers of pancakes with lot of fruits</p>
+                <div class="time">
+                    <div class="prep">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Prep: 10 mins</span>
+                    </div>
+                    <div class="cook">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>Cook: 15 mins</span>
+                    </div>
+                    <div class="serve">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Servings: 2</span>
+                    </div>
+                </div>
+                <button type="button" id="btn">View recipe</button>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" alt="#">
+                <h4>Fruit Pancake</h4>
+                <p>A refreshing, layers of pancakes with lot of fruits</p>
+                <div class="time">
+                    <div class="prep">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Prep: 10 mins</span>
+                    </div>
+                    <div class="cook">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>Cook: 15 mins</span>
+                    </div>
+                    <div class="serve">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Servings: 2</span>
+                    </div>
+                </div>
+                <button type="button" id="btn">View recipe</button>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script src="recipe.js"></script>
+</body>
+</html>

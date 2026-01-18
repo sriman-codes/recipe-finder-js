@@ -1,0 +1,129 @@
+@media (min-width: 768px) {
+/* body */
+.body{
+    height: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcd9d3;
+}
+.outer{
+    height: 90%;
+    width: 80%;
+
+}
+.box1{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #173A34;
+}
+.box1 h1{
+    font-size: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box1 p{
+    width: 590px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+}
+.box2{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-box{
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.box2 img{
+    height: 550px;
+    width: 96%;
+    border-radius: 10px;
+    
+}
+}
+/* MOBILE FIXED */
+@media (max-width: 767px) {
+
+    .body{
+        height: 100vh;
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #dcd9d3;
+    }
+
+    .outer{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .box1{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        color: #173A34;
+    }
+
+    .box1 h1{
+        font-size: 32px;       /* smaller for mobile */
+    }
+
+    .box1 p{
+        width: 100%;            /* full width on mobile */
+        font-size: 16px;        /* readable size */
+        line-height: 22px;
+        padding: 0 10px;
+    }
+
+    .box2{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-box{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .box2 img{
+        width: 100%;
+        height: auto;          /* responsive height */
+        border-radius: 10px;
+    }
+}
