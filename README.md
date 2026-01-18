@@ -21,7 +21,7 @@ A simple and responsive web application to discover healthy, quick, and easy-to-
 
 - HTML5  
 - CSS3  
-- JavaScript (Vanilla JS)
+- JavaScript (node JS)
 
 ---
 
@@ -40,4 +40,5 @@ A simple and responsive web application to discover healthy, quick, and easy-to-
 ---
 
 ## 📂 Project Structure
+
 
